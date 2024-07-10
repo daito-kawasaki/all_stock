@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { noto_serif_md } from "@/lib/fonts";
+import Blue_bg from "./parts_blue_gb";
 
 export default function Main_sec() {
   const imgPath = "/img/";
@@ -50,7 +51,7 @@ export default function Main_sec() {
           className=" h-[100%]"
         />
       </div>
-      <div className=" absolute z-[-1] left-0 bottom-0 w-full h-1/2 bg-blue-200/25"></div>
+      <Blue_bg bg_position="botttom-0" bg_height="h-1/2" />
     </div>
   );
 }

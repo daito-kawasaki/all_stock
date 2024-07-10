@@ -24,7 +24,7 @@ export default function Header() {
             href=""
             className={
               `${zen_kaku_md.className}` +
-              " flex items-center gap-4 py-3 px-5 border border-zinc-800/70 rounded-3xl text-base text-black/70"
+              " flex items-center gap-4 py-2 px-5 border border-zinc-800/70 rounded-3xl text-base text-black/70"
             }
           >
             <FontAwesomeIcon icon={faPaperPlane} className=" w-4 h-4" />

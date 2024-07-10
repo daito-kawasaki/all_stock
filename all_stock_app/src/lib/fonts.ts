@@ -53,3 +53,9 @@ export const zen_kaku_bl = Zen_Kaku_Gothic_New({
   subsets: ["latin"],
   weight: "700",
 });
+
+export const playfair_md = Playfair_Display({
+  subsets: ["latin"],
+  weight: "500",
+});
+
