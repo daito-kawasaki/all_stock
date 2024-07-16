@@ -4,7 +4,7 @@ import Parts_sub_ttl from "./parts_sub_ttl";
 import Parts_mid_comment from "./parts_mid_comment";
 import Parts_btm_comment from "./parts_btm_comment";
 import Blue_bg from "./parts_blue_gb";
-import View_more from "./parts_view_more";
+import Parts_view_more from "./parts_view_more";
 
 export default function Concept_sec() {
   const imgPath = "/img/";
@@ -47,7 +47,11 @@ export default function Concept_sec() {
             text_mid_2="当店が保管することで、再度ご来店いただいたときに"
             text_btm="懐かしんでもえるような、時間や空間を提供します。"
           />
-          <View_more />
+          <Parts_view_more
+            back="bg-slate-900/70"
+            color="text-white"
+            border="none"
+          />
         </div>
       </div>
     </section>

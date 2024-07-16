@@ -7,7 +7,7 @@ interface TtlProps {
 
 export default function Parts_ttl({ sub_ttl, ttl }: TtlProps) {
   return (
-    <div className="ttl_block w-fit mb-24 pl-12 pr-24 pb-2 border-b border-black">
+    <div className="ttl_block w-72 h-[69px] mb-24 pl-12 pr-24 pb-2 border-b border-black">
       <span
         className={`${playfair_md.className} text-zinc-800/70 text-sm block pb-[5%]`}
       >
