@@ -18,7 +18,7 @@ export default function Concept_sec() {
           height={373}
         />
       </div>
-      <Blue_bg bg_position="top-0" bg_height="h-full" />
+      <Blue_bg bg_position="top-0" bg_height="h-full" color="bg-blue-200/25" />
       <Parts_ttl sub_ttl="concept" ttl="私たちの想い" margin="mb-16" />
       <div className="contents_cnt flex justify-between items-center px-[7.32vw]">
         <div className="left w-[43.9238653vw]">
