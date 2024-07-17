@@ -19,7 +19,7 @@ export default function Cafe_sec() {
           className="w-full h-auto"
         />
       </div>
-      <div className="ttl_cnt mb-[4.39238653vw] pt-[14.64vw]">
+      <div className="ttl_cnt  pt-[14.64vw]">
         <Parts_ttl ttl="カフェ紹介" sub_ttl="Cafe Introduction" margin="" />
       </div>
       <Parts_slider
