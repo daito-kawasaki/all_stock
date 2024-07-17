@@ -19,7 +19,7 @@ export default function Concept_sec() {
         />
       </div>
       <Blue_bg bg_position="top-0" bg_height="h-full" />
-      <Parts_ttl sub_ttl="concept" ttl="私たちの想い" margin="mb-16" />
+      <Parts_ttl sub_ttl="concept" ttl="私たちの想い" />
       <div className="contents_cnt flex justify-between items-center px-[7.32vw]">
         <div className="left w-[43.9238653vw]">
           <Image
