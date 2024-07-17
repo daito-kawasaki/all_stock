@@ -14,7 +14,7 @@ export default function Salon_sec() {
         <Image
           src={`${imgPath}salon_top.png`}
           alt=""
-          width={294.15}
+          width={293.15}
           height={288.15}
         />
       </div>
