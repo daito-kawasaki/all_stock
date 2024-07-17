@@ -14,9 +14,9 @@ export default function Interview_sec() {
         <Image src={`${imgPath}moon.png`} alt="" width={210} height={210} />
       </div>
       <div className="ttl_cnt">
-        <Parts_ttl ttl="代表紹介" sub_ttl="Interview" />
+        <Parts_ttl ttl="代表紹介" sub_ttl="Interview" margin="mb-10" />
       </div>
-      <div className="content_cnt mx-[7.32vw] flex items-center justify-between mt-[-3%]">
+      <div className="content_cnt mx-[7.32vw] flex items-center justify-between">
         <div className="left mb-16 flex-1">
           <div className="ttl_block ml-10">
             <Parts_sub_ttl
