@@ -20,7 +20,11 @@ export default function Cafe_sec() {
         />
       </div>
       <div className="ttl_cnt  pt-[14.64vw]">
-        <Parts_ttl ttl="カフェ紹介" sub_ttl="Cafe Introduction" margin="" />
+        <Parts_ttl
+          ttl="カフェ紹介"
+          sub_ttl="Cafe Introduction"
+          margin="mb-10"
+        />
       </div>
       <Parts_slider
         imgNameLeft="cafe_l.png"
