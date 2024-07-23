@@ -18,7 +18,7 @@ export default function Concept_sec() {
           height={373}
         />
       </div>
-      <Blue_bg bg_position="top-0" bg_height="h-full" />
+      <Blue_bg bg_position="top-0" bg_height="h-full" color="bg-blue-200/25" />
       <Parts_ttl sub_ttl="concept" ttl="私たちの想い" margin="mb-16" />
       <div className="contents_cnt flex justify-between items-center px-[7.32vw]">
         <div className="left w-[43.9238653vw]">
@@ -42,10 +42,12 @@ export default function Concept_sec() {
             text_btm="だから、体験や想い出を「ストック」する"
           />
           <Parts_btm_comment
-            text_top="美容室、カフェ、バイクガレージ"
-            text_mid="３種類の体験で紡がれた皆様の思い出を"
-            text_mid_2="当店が保管することで、再度ご来店いただいたときに"
-            text_btm="懐かしんでもえるような、時間や空間を提供します。"
+            texts={[
+              "美容室、カフェ、バイクガレージ",
+              "３種類の体験で紡がれた皆様の思い出を",
+              "当店が保管することで、再度ご来店いただいたときに",
+              "懐かしんでもえるような、時間や空間を提供します。",
+            ]}
           />
           <Parts_view_more
             back="bg-slate-900/70"
