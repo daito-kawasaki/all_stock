@@ -51,11 +51,7 @@ export default function Main_sec() {
           className=" h-[100%]"
         />
       </div>
-      <Blue_bg
-        bg_position="botttom-0"
-        bg_height="h-1/2"
-        color="bg-blue-200/25"
-      />
+      <Blue_bg bg_position="botttom-0" bg_height="h-1/2" />
     </div>
   );
 }

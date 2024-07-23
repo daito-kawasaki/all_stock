@@ -9,7 +9,7 @@ export default function Interview_sec() {
   const imgPath = "/img/";
   return (
     <div className="interview_sec pt-40 pb-16 relative">
-      <Blue_bg bg_position="top-0" bg_height="h-[60%]" color="bg-blue-200/25" />
+      <Blue_bg bg_position="top-0" bg_height="h-[60%]" />
       <div className="moon_img w-[15.373352855vw] absolute top-[2%] left-[12%]">
         <Image src={`${imgPath}moon.png`} alt="" width={210} height={210} />
       </div>
