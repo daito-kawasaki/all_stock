@@ -10,6 +10,7 @@ export default function Parts_btm_comment({ texts }: { texts: string[] }) {
     <div className="btm_comment_block mt-8 mb-10">
       {texts.map((text, key) => (
         <div
+          key={key}
           className={`${noto_serif_rl.className} text-zinc-800/70 text-base leading-normal tracking-widest`}
         >
           <span>{text}</span>
