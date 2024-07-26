@@ -35,7 +35,7 @@ export default function Parts_input_select({
           selectedValue === "" ? "select-placeholder" : "select-selected"
         } ${inputSize} rounded-md appearance-none`}
       >
-        <option value="" disabled selected className="select-placeholder">
+        <option value="" disabled className="select-placeholder">
           {selectText}
         </option>
         {optionText.map((text, key) => (
