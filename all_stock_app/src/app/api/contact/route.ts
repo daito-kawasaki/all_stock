@@ -10,6 +10,9 @@ export async function POST(req:NextRequest) {
     auth: {
       user: process.env.GMAILUSER,
       pass: process.env.GMAILPASS,
+    },
+    tls: {
+      rejectUnauthorized: false
     }
   })
 
