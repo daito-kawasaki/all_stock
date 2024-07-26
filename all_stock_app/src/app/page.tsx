@@ -8,6 +8,7 @@ import Bike_sec from "@/components/bike_sec";
 import News_sec from "@/components/news_sec";
 import Store_sec from "@/components/store_sec";
 import Contact_sec from "@/components/contact_sec";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <News_sec />
       <Store_sec />
       <Contact_sec />
+      <Footer />
     </>
   );
 }
