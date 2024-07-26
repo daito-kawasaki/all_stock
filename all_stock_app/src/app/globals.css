@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .select-text {
+    @apply text-black;
+  }
+  .select-placeholder {
+    @apply text-gray-400;
+  }
+  .select-selected {
+    @apply text-black;
+  }
+  .input-full{
+    @apply w-[43.9238653vw];
+    @apply h-[3.66vw];
+  }
+  .input-half{
+    @apply w-[10.98vw];
+    @apply h-[3.66vw];
+  }
+  .icon:after{
+    font: var(--fa-font-solid);
+    content: "\f054";
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+  }
+}
+
