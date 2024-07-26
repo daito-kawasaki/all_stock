@@ -1,4 +1,4 @@
-import { next } from '@vercel/edge';
+import { NextResponse } from '@vercel/edge';
 
 export const config = {
     matcher: '/(.*)', // 兄弟および配下のディレクトリに認証処理を設ける
@@ -9,10 +9,10 @@ export default function middleware(request) {
 
     if (authorizationHeader) {
         const basicAuth = authorizationHeader.split(' ')[1];
-        const [user, password] = atob(basicAuth).toString().split(':');
+        const [user, password] = Buffer.from(basicAuth, 'base64').toString('ascii').split(':');
 
         if (user === process.env.BASIC_AUTH_USER && password === process.env.BASIC_AUTH_PASSWORD) {
-            return next();
+            return NextResponse.next();
             // 認証通過後の処理。静的ページを読み込みます
         }
     }
