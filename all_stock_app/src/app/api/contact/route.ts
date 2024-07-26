@@ -3,6 +3,9 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req:NextRequest) {
+  console.log('GMAILUSER:', process.env.GMAILUSER);
+  console.log('GMAILPASS:', process.env.GMAILPASS);
+
   const body = await req.json();
 
   const transporter = nodemailer.createTransport({
