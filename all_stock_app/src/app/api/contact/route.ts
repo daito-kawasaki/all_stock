@@ -1,3 +1,4 @@
+import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -41,14 +42,10 @@ export async function POST(req:NextRequest) {
     return NextResponse.json({ message: '成功しました!' });
   } catch (err){
     console.log(err);
-    return NextResponse.json({ message: '失敗しました。' }, {status: 500 });
+    if (err instanceof Error) {
+      return NextResponse.json({ message: '失敗しました。', error: err.message }, { status: 500 });
+    } else {
+      return NextResponse.json({ message: '失敗しました。', error: 'Unknown error' }, { status: 500 });
+    }
   }
-
-
-  // transporter.sendMail(toHostMailData, function (err, info){
-  //   if(err) console.log(err + 'こんちには');
-  //   else console.log(info);
-  // })
-
-  // return res.send('成功しました');
 }
