@@ -44,9 +44,9 @@ export async function POST(req:NextRequest) {
   } catch (err){
     console.log(err);
     if (err instanceof Error) {
-      return NextResponse.json({ message: '失敗しました。', error: err.message, env: process.env }, { status: 500 });
+      return NextResponse.json({ message: '失敗しました。', error: err.message}, { status: 500 });
     } else {
-      return NextResponse.json({ message: '失敗しました。', error: 'Unknown error', env: process.env }, { status: 500 });
+      return NextResponse.json({ message: '失敗しました。', error: 'Unknown error'}, { status: 500 });
     }
   }
 }
