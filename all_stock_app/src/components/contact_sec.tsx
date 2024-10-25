@@ -1,3 +1,6 @@
+"use client";
+
+import React from "react";
 import PartsContactForm from "./parts_contact_form";
 import Parts_ttl from "./parts_ttl";
 import { Element } from "react-scroll";
