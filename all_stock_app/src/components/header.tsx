@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import React from "react";
+// import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import { zen_kaku_md } from "@/lib/fonts";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   const imgPath = "/img/";
@@ -20,8 +25,11 @@ export default function Header() {
           />
         </div>
         <div className="right flex items-center gap-10">
-          <Link
-            href=""
+          <ScrollLink
+            to="contact"
+            smooth
+            duration={1000}
+            offset={-250}
             className={
               `${zen_kaku_md.className}` +
               " flex items-center gap-4 py-2 px-5 border border-zinc-800/70 rounded-3xl text-base text-black/70"
@@ -29,7 +37,7 @@ export default function Header() {
           >
             <FontAwesomeIcon icon={faPaperPlane} className=" w-4 h-4" />
             お問い合わせ
-          </Link>
+          </ScrollLink>
           <div className="w-[50px] h-[50px] rounded-[100px] border border-zinc-800 flex-col justify-center items-center gap-[7px] inline-flex">
             <div className="w-[30px] h-[0px] relative">
               <span className="w-[30px] h-[0px] left-0 top-0 absolute border border-zinc-800/70"></span>
